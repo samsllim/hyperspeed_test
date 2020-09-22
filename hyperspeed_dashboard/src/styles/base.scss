@@ -1,9 +1,17 @@
 $bodyColor: #F2F7FE;
-$backgroundColor: #FFF;
+$whiteColor: #FFF;
 $primaryColor: #337DFF;
 $defaultColor: #51585F;
 $blackColor: #17181A;
 $lightGreyColor: #91989B;
+$lighterGreyColor: #EAF2FF;
+$lighterGreyColor1: #E5EBF0;
+$red:#DA4453;
+$redBg:rgba(218, 68, 83, 0.1);
+$orange:#FC6E51;
+$orangeBg:rgba(252, 110, 81, 0.1);
+$purple:#967ADC;
+$purpleBg:rgba(150, 122, 220, 0.1);
 
 $light:300;
 $regular:400;
@@ -17,49 +25,211 @@ body{
     color: $defaultColor;
 }
 
+h1, h2, h3, h4, h5, h6, p, span, a, li{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #nav{
     top: 0px;
-    background-color: $backgroundColor;
+    background-color: $whiteColor;
     width: 100%;
     height: 129px;
     // position: fixed;
 }
 
+
 .topBar{
     width: 100%;
     height: 70.5px;
-
-    .logoNav{
-        width: 89px;
-        margin-left: 52px;
-        position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        .logo{
-            width: 67px;
-            height: 21px; 
-        }
-        .dropdown{
-            float: right;
-        }
+    border-bottom: $lighterGreyColor 1px solid;
+    .name{
+        font-size: 15px;
+        font-weight: $semiBold;
+        letter-spacing: 1.35px;
     }
-
-    .profile{
-        height: 37px;
-        width: 96;
-        float: right;
-        margin-right: 54px;
-    }
-
-    .notification{
-        float: right;
-        margin-right: 34px;
+    .role{
+        font-size: 12px;
+        letter-spacing: 1.08px;
     }
 }
 
+.navBar{
+    width: 100%;
+    height: 58.5px;
+}
+
+
+
 //custom
+//color
 .black{
     color: $blackColor !important;
+}
+.grey{
+    color: $defaultColor;
+}
+.lighterGrey{
+    color: $lighterGreyColor; 
+}
+.red{
+    color: $red;
+}
+.orange{
+    color: $orange;
+}
+.purple{
+    color: $purple;
+}
+
+.bg-white{
+    background-color: $whiteColor;
+}
+.bg-lighterGrey1{
+    background-color: $lighterGreyColor1;
+}
+.bg-red{
+    background-color: $redBg;
+}
+.bg-orange{
+    background-color: $orangeBg;
+}
+.bg-purple{
+    background-color: $purpleBg;
+}
+
+.semi-bold{
+    font-weight: $semiBold;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+.pad7{
+    padding: 7px;
+}
+
+.mtop-8{
+    margin-top: 8px;
+}
+.mtop-25{
+    margin-top: 25px;
+}
+.mtop-40{
+    margin-top: 25px;
+}
+
+.mleft-12{
+    margin-left: 12px;
+}
+
+.mleft-15{
+    margin-left: 15px;
+}
+
+.mleft-55{
+    margin-left: 55px;
+}
+
+.mright-36{
+    margin-right: 36px;
+}
+
+.lineh-17{
+    line-height: 17px;
+}
+
+.height-100{
+    height: 100%;
+}
+
+.height-58px{
+    height: 58px;
+}
+
+.height-45px{
+    height: 45px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-118px{
+    width: 118px;
+}
+
+.roundedCorner{
+    border-radius: 6px;
+}
+
+
+.left-border-none {
+    border-left:none !important;
+}
+.left-radius-none {
+    border-top-left-radius:0 !important;
+    border-bottom-left-radius:0 !important;
+}
+.right-radius-none {
+    border-top-right-radius:0 !important;
+    border-bottom-right-radius:0 !important;
+}
+
+.icon-filled{
+    padding: 7px;
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+
+//bootstrap overwrite
+.container{
+    // max-width: 1260px;
+    max-width: 1920px;
+}
+
+li{
+    a{
+        color: $defaultColor;
+    }
+    a:active{
+        color: $primaryColor;
+    }
+}
+
+.nav-tabs{
+    border: none;
+    .nav-link {
+        border: none;
+        padding: 0;
+    }
+}
+    
+
+.nav-item{
+    font-size: 15px;
+    .nav-link{
+        display: table-cell;
+        vertical-align: middle
+    }
+    .nav-link.active{
+        color: $primaryColor;
+        font-weight: $semiBold;
+        border-bottom: $primaryColor 2px solid;
+    }
+}
+
+.custom-select{
+    border-radius: 6px !important;
+    border-top-left-radius:0 !important;
+    border-bottom-left-radius:0 !important;
+    height: 45px;
+}
+
+.form-control{
+    border-radius: 6px;
 }

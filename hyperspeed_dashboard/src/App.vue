@@ -1,24 +1,24 @@
 <template>
   <div id="nav">
     <TopBar/>
-    <div id="tabBar">
-    </div>
-    <router-link to="/">Home <i class="fab fa-medium"></i></router-link> |
-    <router-link to="/about">About</router-link>
+    <NavBar/>
+    <!-- <router-link to="/">Home <i class="fab fa-medium"></i></router-link> |
+    <router-link to="/about">About</router-link> -->
   </div>
   <router-view/>
 </template>
 
 <script>
 import TopBar from '@/components/TopBar.vue'
+import NavBar from '@/components/NavBar.vue'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
 export default {
   components: {
     TopBar,
+    NavBar
   }
-  
 }
 </script>
 
