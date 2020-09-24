@@ -200,10 +200,10 @@
 				<div class="row card-m bg-white roundedCorner">
 					<div class="col-12 height-100">
 						<div class="row height-35px align-items-center">
-							<div class="col-6 pleft-0">
+							<div class="col-8 pleft-0">
 								<span class="col-title">Directors</span>
 							</div>
-							<div class="col-6">
+							<div class="col-4">
 								<div class="float-right">
 								<router-link to="/directors" class="float-right r-link fs-13">See All</router-link>
 								</div>
@@ -253,10 +253,10 @@
 				<div class="card-m row bg-white roundedCorner">
 					<div class="col-12 height-100">
 						<div class="row height-35px align-items-center">
-							<div class="col-6 pleft-0">
+							<div class="col-8 pleft-0">
 								<span class="col-title">Shareholders</span>
 							</div>
-							<div class="col-6">
+							<div class="col-4">
 								<div class="float-right">
 								<router-link to="/shareholders" class="float-right r-link fs-13">See All</router-link>
 								</div>
@@ -305,10 +305,10 @@
 				<div class="card-m row bg-white roundedCorner">
 					<div class="col-12 height-100">
 						<div class="row height-35px align-items-center">
-							<div class="col-6 pleft-0">
+							<div class="col-8 pleft-0">
 								<span class="col-title">Corporate Secretary</span>
 							</div>
-							<div class="col-6">
+							<div class="col-4">
 								<div class="float-right">
 								<router-link to="/corporate-secretary" class="float-right r-link fs-13">More Details</router-link>
 								</div>
