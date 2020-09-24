@@ -1,8 +1,8 @@
 <template>
 <div class="navBar">
     <div class="container height-100">
-        <div class="row  height-100">
-            <ul class="nav nav-tabs height-100 align-items-center" role="tablist">
+        <div class="row height-100 tabbable" id="overflow-style-1">
+            <ul class="nav nav-tabs height-100 align-items-center nav-m" role="tablist">
                 <li :class="'nav-item height-100 ' + (index > 0 ? 'mleft-55': '')" v-for="(route, index) in routes" :key="index">
                     <router-link :to="route.href" :class="'nav-link height-58px ' + ($route.path == route.href  ? 'active' : '')" data-index="0" data-toggle="tab" role="tab"><i :class="route.icon"></i> &nbsp; {{route.title}}</router-link>
                 </li>

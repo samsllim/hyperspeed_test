@@ -19,67 +19,33 @@ $light:300;
 $regular:400;
 $semiBold: 600;
 $bold: 700;
-
 body{
     margin: 0;
     background-color: $bodyColor;
     font:  $regular 15px 'Source Sans Pro', sans-serif ;
     color: $defaultColor;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#nav{
-    top: 0px;
-    background-color: $whiteColor;
-    width: 100%;
-    height: 129px;
-    // position: fixed;
-}
-
-
-.topBar{
-    width: 100%;
-    height: 70.5px;
-    border-bottom: $lighterGreyColor 1px solid;
-    .name{
-        font-size: 15px;
-        font-weight: $semiBold;
-        letter-spacing: 1.35px;
-    }
-    .role{
-        font-size: 12px;
-        letter-spacing: 1.08px;
-    }
-}
-
-.navBar{
-    width: 100%;
-    height: 58.5px;
-}
-
-.r-link{
-    color: $primaryColor;
-    text-decoration: underline;
-}
-
-.round-img{
-    border-radius: 50%;
-}
-
-
-//custom
 //color
 .black{
     color: $blackColor !important;
+}
+.primary{
+    color: $primaryColor !important;
 }
 .grey{
     color: $defaultColor;
 }
 .lighterGrey{
     color: $lighterGreyColor; 
+}
+.lightGrey{
+    color: $lightGreyColor; 
 }
 .lightGrey1{
     color: $lightGreyColor1; 
@@ -120,11 +86,15 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     font-weight: $semiBold;
 }
 
+//fontsize
 .fs-10{
     font-size: 10px;
 }
 .fs-13{
     font-size: 13px;
+}
+.fs-17{
+    font-size: 17px;
 }
 .fs-18{
     font-size: 18px;
@@ -133,6 +103,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     font-size: 20px;
 }
 
+//padding
 .pad7{
     padding: 7px;
 }
@@ -141,6 +112,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
 }
 .ptop-16{
     padding-top: 16px;
+}
+.ptop-10{
+    padding-top: 10px;
 }
 .ptop-11{
     padding-top: 11px;
@@ -154,6 +128,8 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
 .pright-0{
     padding-right: 0px;
 }
+
+//margin
 .mtop-8{
     margin-top: 8px;
 }
@@ -186,11 +162,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
 .mleft-25{
     margin-left: 25px;
 }
-
 .mleft-55{
     margin-left: 55px;
 }
-
 .mright-20{
     margin-right: 20px;
 }
@@ -198,12 +172,15 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     margin-right: 36px;
 }
 
+//height
 .lineh-17{
     line-height: 17px;
 }
-
 .height-100{
     height: 100%;
+}
+.height-130px{
+    height: 130px;
 }
 .height-69px{
     height: 69px;
@@ -218,6 +195,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     height: 35px;
 }
 
+//width
 .width-100{
     width: 100%;
 }
@@ -226,10 +204,47 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     width: 118px;
 }
 
+
+//custom
+#nav{
+    top: 0px;
+    background-color: $whiteColor;
+    width: 100%;
+    height: 129px;
+}
+
+.topBar{
+    width: 100%;
+    height: 70.5px;
+    border-bottom: $lighterGreyColor 1px solid;
+    .name{
+        font-size: 15px;
+        font-weight: $semiBold;
+        letter-spacing: 1.35px;
+    }
+    .role{
+        font-size: 12px;
+        letter-spacing: 1.08px;
+    }
+}
+
+.navBar{
+    width: 100%;
+    height: 58.5px;
+}
+
+.r-link{
+    color: $primaryColor;
+    text-decoration: underline;
+}
+
+.round-img{
+    border-radius: 50%;
+}
+
 .roundedCorner{
     border-radius: 6px;
 }
-
 
 .left-border-none {
     border-left:none !important;
@@ -259,10 +274,76 @@ h1, h2, h3, h4, h5, h6, p, span, a, li, td, th{
     color: $blackColor;
 }
 
+.tabbable .nav-tabs {
+    overflow-x: auto;
+    overflow-y:hidden;
+    flex-wrap: nowrap;
+ }
+ .tabbable .nav-tabs .nav-link {
+   white-space: nowrap;
+ }
+
+.nav-m{
+    margin: 0px 1.5em; 
+ }
+
+ .card-m{
+    margin: 0px 0.5em;
+ }
+
+.card-row-m{
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+ }
+
+.cell-middle{
+    vertical-align: middle !important;
+ }
+
+@media only screen and (max-width: 1200px) {
+    .lg-card-row-m{
+        margin-top: 1.6em;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .md-card-row-m{
+        margin-top: 1.6em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sm-card-row-m{
+        margin-top: 1.6em;
+    }
+}
+
+#overflow-style-1{
+    ::-webkit-scrollbar-track
+    {
+        box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+        background-color: $lightGreyColor1;
+    }
+}
+
 
 //bootstrap overwrite
 .container{
     max-width: 90%;
+}
+.container-content{
+    max-width: 95%;
 }
 
 li{
@@ -301,6 +382,7 @@ li{
     border-top-left-radius:0 !important;
     border-bottom-left-radius:0 !important;
     height: 45px;
+    width: 8rem;
 }
 
 .form-control{
@@ -339,11 +421,14 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     border-color: $lighterGreyColor;
-}
 
-th{
-    color: $blackColor;
-    font-weight: $semiBold;
+    thead{
+        th{
+            border-bottom: none !important;
+            color: $blackColor;
+            font-weight: $semiBold;
+        }
+    }
 }
 
 .page-item .page-link{
@@ -351,3 +436,64 @@ th{
     font-weight: $semiBold;
     font-size: 13px;
 }
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+div.scrollmenu a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+background-color: #777;
+}
+
+.search {
+    text-align: center;
+    color: white;
+}
+
+.search__field:not(:focus) ~ .search__autocomplete {
+    display: none; 
+}
+    
+.search__autocomplete {
+    z-index: 2;
+    position: relative;
+    max-width: 40rem;
+    margin: auto;
+    & > .autocomplete {
+        position: absolute;
+        left: 0; 
+        top: 0;
+        right: 0;
+    }
+}
+
+.autocomplete {
+    background-color: white;
+    color: #444;
+    box-shadow: 0 1px 2px rgba(0,0,0, .15);
+    font-size: .875rem;
+    text-align: left;
+    &__item {
+        border-top: 1px solid #eee;
+        padding: 1rem 1rem;
+        cursor: pointer;
+        &:hover {
+        background-color:  #eee;
+        }
+    }
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
+    border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  }
